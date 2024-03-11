@@ -1,0 +1,110 @@
+/* Default styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: ivory;
+    color: black;
+    text-align: center;
+    
+}
+.info{
+    margin: 25px;
+}
+
+table {
+    background-color: ivory;
+    color: black;
+    width: 85%; /* Table  will occupy 85% of the page body width */
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+.mydp {
+    margin: 50px; /*For Picture container*/
+}
+
+.DP { /*MAIN PHOTO*/
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.SCHED td {     /*Data inside table to be centered*/
+    text-align: center;
+    table-layout: fixed;
+    padding: 10px;
+}
+
+.SCHED {    /*for responsiveness of the table*/
+    table-layout: fixed;
+    width: 100%;
+}
+
+table,
+th,
+td,
+tr { /*table border*/
+    border: 3px solid midnightblue;
+}
+/*first cell width the time*/
+.SCHED th:first-child,
+.SCHED td:first-child {
+    width: 10%;
+}
+/*rest of the cell */
+.SCHED th:not(:first-child),
+.SCHED td:not(:first-child) {
+    width: 15%;
+}
+/*inherit ivory bg color when no data inside cell*/
+.SCHED td:empty {
+    background-color: inherit; /* Inherit body background color */
+}
+
+.pe { /*cell background colo*/
+    background-color: lightblue;
+}
+
+.al {
+    background-color: lightcoral;
+}
+
+.lara {
+    background-color: lightcyan;
+}
+
+.dungo {
+    background-color: lightgray;
+}
+
+.db {
+    background-color: lightpink;
+}
+
+.eti {
+    background-color: aqua;
+}
+
+.mack {
+    background-color: lightgreen;
+}
+
+/* Print mode styling */
+@media print {
+    body {
+        color: black; /* All text appears in black */
+        background-color: white; /* White background for the page */
+        font-family: 'Times New Roman', Times, serif;/*for new font style*/
+    }
+
+    table {
+        background-color: white; /* White background for table */
+        color: black; /* Text color for table */
+    }
+
+    /* Shades of gray for table cells */
+    .SCHED td,
+    .SCHED th {
+        background-color: #f2f2f2; /* Light gray background */
+        color: black; /* Text color for table cells */
+    }
+}
