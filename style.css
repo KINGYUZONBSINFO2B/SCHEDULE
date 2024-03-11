@@ -35,7 +35,7 @@ table {
 }
 
 .SCHED {    /*for responsiveness of the table*/
-    table-layout: fixed;
+    
     width: 100%;
 }
 
