@@ -87,6 +87,12 @@ tr { /*table border*/
 .mack {
     background-color: lightgreen;
 }
+th{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* Print mode styling */
 @media print {
