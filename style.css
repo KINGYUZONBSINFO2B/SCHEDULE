@@ -93,6 +93,12 @@ th{
     font-weight: bold;
     font-style: italic;
 }
+th{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* Print mode styling */
 @media print {
